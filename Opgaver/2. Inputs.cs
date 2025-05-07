@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Transactions;
 
 namespace Opgaver
 {
@@ -26,6 +27,8 @@ namespace Opgaver
 
             Console.WriteLine("Indtast en streng: ");
             // Lav opgaven herunder!
+            string word = "nigger u gay";
+            Console.WriteLine(word);
         }
 
         public static void Int1()
@@ -36,6 +39,8 @@ namespace Opgaver
 
             Console.WriteLine("Indtast et tal: ");
             // Lav opgaven herunder!
+            int tal = 69;
+            Console.WriteLine(tal);
         }
 
         public static void Double1()
@@ -46,6 +51,8 @@ namespace Opgaver
 
             Console.WriteLine("Indtast et decimaltal: ");
             // Lav opgaven herunder!
+            decimal taller = 0.5m;
+            Console.WriteLine(taller);
         }
 
         public static void Bool1()
@@ -56,6 +63,8 @@ namespace Opgaver
 
             Console.WriteLine("Indtast en sandhedsværdi (sandt/falsk): ");
             // Lav opgaven herunder!
+            bool bool1 = true;
+            Console.WriteLine(bool1);
         }
 
         // Mini-projekt: Personlig profil (skabelon)
@@ -69,6 +78,14 @@ namespace Opgaver
             );
             Console.WriteLine("Eksempel: Hej, jeg hedder X, er X år gammel og kommer fra X!");
             // Lav opgaven herunder!
+            Console.WriteLine("enter your name");
+            string name = Console.ReadLine();
+            Console.WriteLine("enter your age");
+            string age = Console.ReadLine();
+            Console.WriteLine("enter your city");
+            string city = Console.ReadLine();
+
+            Console.WriteLine($"hej mit navn er {name}, jeg er {age} år gammel og bor i {city}");
         }
 
         // Mini-projekt 2: BMI-beregner (skabelon)
@@ -83,6 +100,14 @@ namespace Opgaver
             Console.WriteLine(
                 "Tip: BMI beregnes som vægt divideret med højde i anden (BMI = vægt / (højde * højde))."
             );
+            Console.WriteLine("enter your weight in KG");
+            string weight = Console.ReadLine();
+            Console.WriteLine("enter your height in M");
+            string height = Console.ReadLine();
+            decimal.TryParse(weight, out decimal fat);
+            decimal.TryParse(height, out decimal tall);
+            decimal BMI = fat / (tall * tall);
+            Console.WriteLine(BMI);
         }
     }
 }
