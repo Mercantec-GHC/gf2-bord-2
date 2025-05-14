@@ -145,16 +145,7 @@ namespace Opgaver
 
         public static void MiniProjektKarakterFeedback()
         {
-            Console.WriteLine("\nMini-projekt: Karakter-feedback (skabelon)");
-            Console.WriteLine("Opgave:");
-            Console.WriteLine("Lav et program, hvor brugeren indtaster en karakter (fx 12, 10, 7, 4, 02, 00 eller -3).");
-            Console.WriteLine(@"Programmet skal give en passende feedback baseret på karakteren, 
-            fx 'Super flot!', 'Godt klaret', 'Du kan gøre det bedre' osv.");
-            Console.WriteLine("Brug if/else eller switch til at vælge feedbacken.");
 
-            Console.WriteLine(@"Ekstra opgave: Lav så man indtaster flere karaktere 
-            for en bruger og man regner gennemsnittet ud.");
-            // Lav opgaven herunder!
             List<int> karakterer = new List<int>();
             string input;
 

@@ -19,6 +19,7 @@ public class RockPaperScissors
     {
         string Pcchoice = "Rock";
         string PlayerChoise = GetPlayerChoice();
+        Console.WriteLine(PlayerChoise);
     }
 
     public static string GetPlayerChoice()
@@ -41,6 +42,7 @@ public class RockPaperScissors
                 return "";
                 break;
         }
+
         
 
         

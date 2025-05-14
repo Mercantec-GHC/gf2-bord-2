@@ -63,8 +63,10 @@ namespace Opgaver
 
             Console.WriteLine("Indtast en sandhedsværdi (sandt/falsk): ");
             // Lav opgaven herunder!
-            bool bool1 = true;
-            Console.WriteLine(bool1);
+            bool sandt = true;
+            bool falsk = false;
+            string input = Console.ReadLine();
+                Console.WriteLine($"{input}");
         }
 
         // Mini-projekt: Personlig profil (skabelon)

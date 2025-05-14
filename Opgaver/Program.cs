@@ -43,6 +43,9 @@ namespace Opgaver
                     case "9":
                         BinaryConverter.Run();
                         break;
+                    case "10":
+                        Banko.Run();
+                        break;
                     case "!":
                         run = false;
                         Console.WriteLine("Programmet afsluttes. Tak for denne gang!");
